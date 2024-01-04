@@ -3,6 +3,9 @@ string FILE_PATH = "../../../Data/people_dataset.csv";
 
 try
 {
+    // Build the csv file.
+    CSVDataGenerator.GenerateAndSaveCSV(FILE_PATH, 1000);
+
     // Create an instance of DataAnalyzer
     DataAnalyzer analyzer = new(FILE_PATH);
 
