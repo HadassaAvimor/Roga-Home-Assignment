@@ -2,17 +2,18 @@
 Home assignment for Roga company.
 
 ## Introduction
-This project consists of a simple C# console application that performs data analysis on a dataset of individuals. The dataset includes information such as first name, last name, age, weight, and gender. The application calculates the average age of all individuals, counts the number of people within a certain weight range, and calculates the average age of people within that weight range.
-
+This project is a C# console application that not only performs data analysis on a dataset of individuals but also includes functionality for generating this dataset. It utilizes the Faker.Net library to create a diverse set of random data, including first names, last names, ages, weights, and genders. The dataset is then saved as a CSV file. The application analyzes this data to calculate the average age of all individuals, count the number of people within a specific weight range, and calculate the average age of people within that weight range.
 ## Project Structure
 ```bash
 RogaHomeAssignment/
+│
+├── CSVDataGenerator.cs # Class responsible for generating and saving random data to a CSV file.
 │
 ├── DataAnalyzer.cs     # Main class responsible for analyzing the data.
 │
 ├── GlobalUsing.cs      # Contains global using directives for the project.
 │
-├── Program.cs          # Entry point of the application. Initializes and runs the data analysis.
+├── Program.cs          # Entry point of the application. Initializes the data generation and analysis.
 │
 ├── Data/               # Directory for data files.
 │   └── people_dataset.csv  # CSV file containing the dataset to be analyzed.
